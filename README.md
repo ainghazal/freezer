@@ -39,3 +39,15 @@ expired: 1.26%
 ```
 
 As you can see, the info we get from the whois service is not always accurate.
+
+## related tools
+
+- https://github.com/bassosimone/gardener
+- https://github.com/gr3atest/excludeparked
+
+# research
+
+- https://github.com/ooni/probe/issues/1826
+- https://www.securitee.org/files/parking-sensors_ndss2015.pdf
+
+
