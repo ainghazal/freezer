@@ -14,20 +14,11 @@ pip3 install -r requirements.txt
 [...]
 Failed domains (may include false positives, need manual check)
 ---------------------------------------------------------------
-alternativa-chiapas.blogspot.com
-circulodeestudioscoapa.blogspot.com
-jovenesporelsocialismooaxaca.blogspot.com
-juarezenlasombra.blogspot.com
-mexicoendescomposicion.blogspot.com
-nuestromexicobizarro.blogspot.com
-revolucionesmx.blogspot.com
 users.telenet.be
 themexicomonitor.com
-mexicovoices.blogspot.com
 www.saludymedicinas.com.mx
-movimiento-sinarquista.blogspot.com
 
-failed: 5.04%
+failed: 1.26%
 
 Expired domains
 --------------

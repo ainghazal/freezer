@@ -22,6 +22,21 @@ fieldnames = [
         'expiration_date',
 ]
 
+exclude = [
+        'blogspot.com',
+        'blogspot.fr',
+]
+
+def secondLevel(d):
+    parts = d.split(".")
+    if len(parts) <= 2:
+        return d
+    return ".".join(parts[-2:])
+
+
+def cleanupFailed():
+    global failed
+    failed = [d for d in failed if secondLevel(d) not in exclude]
 
 def main(list_file):
     global numDomains
@@ -72,6 +87,7 @@ if __name__ == "__main__":
         sys.exit(1)
     list_file = sys.argv[1]
     main(list_file)
+    cleanupFailed()
     if len(failed) != 0:
         print()
         print("Failed domains (may include false positives, need manual check)")
